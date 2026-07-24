@@ -1,0 +1,15 @@
+# Obsidian - lokalne ustawienia programu
+.obsidian/
+
+# Oryginalny skan wzorcowej pracy (134 MB - przekracza limit GitHub)
+# W repozytorium znajduje sie wersja skompresowana w 01_Baza_Wiedzy/
+01_Baza_Wiedzy/Skandyploma_260722_155348.pdf
+
+# Folder pomocniczy do recznego uploadu
+GitHub_upload/
+
+# Pliki tymczasowe
+*.tmp
+~$*
+Untitled/
+node_modules/
