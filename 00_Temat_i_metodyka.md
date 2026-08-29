@@ -38,7 +38,30 @@ Wydział: Kształtowania Środowiska i Rolnictwa (WKŚiR), ZUT w Szczecinie
 Poza standardową analizą ekonomiczną (LCOE, NPC) i emisyjną przeprowadzona zostanie
 analiza autonomii obiektu: wyznaczenie maksymalnego czasu (godzin/dni) pracy szpitala
 w pełnym trybie wyspowym, bez dostępu do sieci nadrzędnej, w warunkach długotrwałej
-awarii systemowej (*black-sky hazard*). Test obejmuje scenariusze 2 i 3.
+awarii systemowej (*black-sky hazard*).
+
+**Test obejmuje wszystkie trzy scenariusze.** Scenariusz 1 pełni funkcję **wariantu
+odniesienia** — bez wyznaczenia czasu autonomii układu klasycznego (sieć + agregat)
+wyniki uzyskane dla wariantów hybrydowych pozbawione są punktu porównawczego, a tym
+samym wartości dowodowej. Podejście takie jest zgodne z metodyką stosowaną w literaturze
+przedmiotu, gdzie miarą skuteczności rozwiązań mikrosieciowych jest przyrost wskaźnika
+ciągłości zasilania odbiorów krytycznych względem układu opartego wyłącznie na agregacie
+prądotwórczym (Eyimaya i in. 2026: wzrost z 48% do 87%).
+
+Dodatkowo w Scenariuszu 1 czas autonomii determinowany jest wyłącznie zapasem paliwa
+w zbiorniku, co pozwala wykazać wrażliwość układu klasycznego na przerwanie łańcucha
+dostaw oleju napędowego — zagadnienie omówione w podrozdziale 3.2.
+
+Analizę przeprowadza się w dwóch wariantach czasowych:
+
+| Wariant | Czas trwania | Cel |
+|---|---|---|
+| Awaria długotrwała (*black-sky*) | 24–72 h | Wyznaczenie maksymalnego czasu autonomii |
+| Seria przerw krótkotrwałych | wg statystyki SAIDI/SAIFI | Wyznaczenie wskaźnika EENS i niezawodności rocznej |
+
+Test wykonuje się dla dwóch okresów reprezentatywnych: **letniego** (maksymalna produkcja
+PV) oraz **zimowego** (minimalna produkcja PV, GHI = 0,58 kWh/m²/d w grudniu) — ten drugi
+stanowi przypadek najbardziej niekorzystny.
 
 ### 2. Modelowanie przestrzenne PV poza HOMER Pro
 
