@@ -245,9 +245,75 @@ cieplnej również do tych konfiguracji.
 
 ---
 
-## 8. Wnioski metodyczne
+## 8. Ocena konfiguracji pod kątem bezpieczeństwa energetycznego
 
-### 8.1. Kryterium najniższego NPC prowadzi do rozwiązania niedopuszczalnego
+Odpowiedź na zasadnicze pytanie pracy: **która architektura najlepiej realizuje wymóg
+ciągłości zasilania obiektu infrastruktury krytycznej.** Kryterium ekonomiczne pełni
+tu rolę podrzędną wobec kryterium niezawodności.
+
+### 8.1. Ocena porównawcza
+
+| Kryterium | K1 Baza | K2 Hybryda | K3 Mikrosieć |
+|---|---|---|---|
+| Energia niedostarczona (A1, 72 h) | 0 kWh ¹ | 7 966 kWh | **1 046 kWh** |
+| Energia niedostarczona (A2) | 0 kWh ¹ | — | **279 kWh** |
+| Czas autonomii bez uzupełnienia paliwa | 30–45 h ² | ok. 1 h | **nieograniczony** ³ |
+| Niezależność od transportu drogowego | **NIE** | tak | **TAK** |
+| Pokrycie klasy 0,5 s | **NIE** | TAK | **TAK** |
+| Udział źródeł własnych | 0% | 21,0% | **87,3%** |
+| Praca poza awarią | 0 h/rok | — | **7 112 h/rok** |
+| LCOE [$/kWh] | 0,220–0,225 | 0,196 | **0,192** |
+
+¹ Wyłącznie w wariancie z agregatem. Bez agregatu: 8 762 kWh.
+² Przy zbiorniku 1 000–1 500 l i zużyciu 33,7 l/h — **niewystarczające na 72 h**.
+³ Pod warunkiem ciągłości dostaw gazu siecią dystrybucyjną.
+
+### 8.2. Konfiguracja rekomendowana: K3 — mikrosieć z kogeneracją gazową
+
+Cztery argumenty rozstrzygające:
+
+**Redukcja energii niedostarczonej o 88%** względem układu bez rezerwy, przy zachowaniu
+tej zdolności w **obu** badanych typach awarii — długotrwałej i serii przerw krótkich.
+
+**Niezależność od transportu drogowego paliwa.** Cecha odróżniająca kogenerację gazową
+od agregatu w sposób jakościowy: w scenariuszu *black-sky*, gdy infrastruktura
+transportowa ulega dezorganizacji, agregat zachowuje zdolność wytwórczą wyłącznie do
+wyczerpania zbiornika — oszacowanego na **30–45 h wobec wymaganych 72**.
+
+**Praca ciągła przez 81% roku.** Jednostka CHP nie jest urządzeniem oczekującym
+w spoczynku, lecz elementem czynnym o sprawności weryfikowanej w sposób ciągły.
+Eliminuje to ryzyko niepowodzenia rozruchu w sytuacji awaryjnej — istotną przyczynę
+zawodności klasycznych układów rezerwowych.
+
+**Najniższy LCOE (0,192 $/kWh).** Zwiększenie bezpieczeństwa nie odbywa się kosztem
+pogorszenia wskaźników ekonomicznych.
+
+### 8.3. Konfiguracja docelowa — architektura hierarchiczna
+
+Żadna z badanych konfiguracji **nie zapewnia pełnego pokrycia** we wszystkich
+scenariuszach. K3 pozostawia 1 046 kWh energii niedostarczonej — wartość dla szpitala
+niedopuszczalną. Jako rozwiązanie docelowe proponuje się układ czteropoziomowy:
+
+| Poziom | Źródło | Funkcja | Czas reakcji |
+|---|---|---|---|
+| **I** | BESS | Odbiory klasy 0,5 s, tryb *grid-forming* | milisekundy |
+| **II** | CHP gazowy | Podstawowe źródło autonomii, obciążenie bazowe | minuty |
+| **III** | PV | Wsparcie sezonowe, redukcja poboru z sieci | — |
+| **IV** | Agregat Diesel | **Rezerwa ostatniej instancji** — przy jednoczesnej awarii sieci gazowej | 15 s |
+
+W układzie takim agregat zachowuje rolę rezerwy ostatniej instancji, uruchamianej
+wyłącznie przy jednoczesnej niedostępności sieci elektroenergetycznej **i** gazowej.
+Jego moc może zostać ograniczona do **ustawowego minimum 30%** mocy szczytowej,
+ponieważ obciążenie bazowe przejmuje jednostka kogeneracyjna — co obniża nakłady
+względem układu klasycznego, gdzie agregat wymiarowany jest na pełne obciążenie.
+
+Weryfikacja ilościowa tej architektury stanowi przedmiot obliczeń właściwych.
+
+---
+
+## 9. Wnioski metodyczne
+
+### 9.1. Kryterium najniższego NPC prowadzi do rozwiązania niedopuszczalnego
 
 We wszystkich wariantach awaryjnych konfiguracją o najniższym koszcie bieżącym netto
 pozostaje układ **pozbawiony źródła rezerwowego** — ten sam, który generuje kilka tysięcy
@@ -260,20 +326,20 @@ Koszt zapewnienia pełnego pokrycia wynosi ok. **220 000 $ NPC** (wzrost LCOE o 
 niedostarczoną jako **ograniczenie twarde** (`Unmet Load = 0`), nie zaś jako składnik
 funkcji celu.
 
-### 8.2. Ograniczenie przestrzenne jest warunkiem wiarygodności
+### 9.2. Ograniczenie przestrzenne jest warunkiem wiarygodności
 
 Bez ograniczenia mocy PV optymalizator wskazuje konfigurację wymagającą powierzchni
 pięciokrotnie większej od dostępnej. Wprowadzenie zbioru dopuszczalnych mocy na podstawie
 analizy CAD rozmieszczenia modułów jest niezbędne.
 
-### 8.3. Dobór jednostki CHP determinuje sens Scenariusza 3
+### 9.3. Dobór jednostki CHP determinuje sens Scenariusza 3
 
 Generyczny agregat wysokoprężny nie jest dysponowany przez optymalizator w żadnym
 wariancie. Zastosowanie rzeczywistej jednostki gazowej z katalogu producenta zmienia
 wynik jakościowo — kogeneracja pracuje 81% roku i pokrywa 64,6% zapotrzebowania
 elektrycznego.
 
-### 8.4. Sezonowość zasobu słonecznego wyklucza autonomię opartą na PV
+### 9.4. Sezonowość zasobu słonecznego wyklucza autonomię opartą na PV
 
 Stosunek GHI maj/grudzień 8,6:1 oznacza, że w warunkach polskich instalacja
 fotowoltaiczna nie może stanowić podstawy zasilania awaryjnego w okresie zimowym.
@@ -281,7 +347,7 @@ Uzasadnia to obecność źródła sterowalnego w architekturze mikrosieci.
 
 ---
 
-## 9. Zadania przed obliczeniami właściwymi
+## 10. Zadania przed obliczeniami właściwymi
 
 | Zadanie | Priorytet |
 |---|---|
@@ -298,7 +364,7 @@ Uzasadnia to obecność źródła sterowalnego w architekturze mikrosieci.
 
 ---
 
-## 10. Pliki modeli
+## 11. Pliki modeli
 
 | Plik | Zawartość |
 |---|---|
