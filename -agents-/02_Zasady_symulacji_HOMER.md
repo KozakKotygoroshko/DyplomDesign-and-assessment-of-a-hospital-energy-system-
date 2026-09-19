@@ -6,6 +6,46 @@
 
 ---
 
+## 0. TERMINOLOGIA — rozróżnienie obowiązujące bezwzględnie
+
+Dwa niezależne wymiary analizy. **Nie wolno ich mylić ani używać zamiennie.**
+
+| Wymiar | Oznaczenie | Zawartość | Nazwa w tekście pracy (PL) |
+|---|---|---|---|
+| **KONFIGURACJA** | K1, K2, K3 | Architektura systemu — jakie źródła są zainstalowane | **Scenariusz** 1 / 2 / 3 |
+| **WARIANT AWARII** | A0, A1, A2 | Stan sieci nadrzędnej — czy i jak długo trwa awaria | **Wariant awarii** |
+
+### Konfiguracje (architektura systemu)
+
+| Oznaczenie | Architektura |
+|---|---|
+| **K1 — Baza** | Sieć + agregat prądotwórczy (Diesel) |
+| **K2 — Hybryda** | Sieć + agregat + PV + BESS |
+| **K3 — Zaawansowana mikrosieć** | Sieć + PV + BESS + CHP gazowy + kocioł |
+
+### Warianty awarii (stan sieci)
+
+| Oznaczenie | Zdarzenie |
+|---|---|
+| **A0** | Praca normalna — brak awarii |
+| **A1** | Black-sky — pojedyncza awaria 72 h (15–17 stycznia) |
+| **A2** | Seria pięciu przerw krótkotrwałych (łącznie 21 h) |
+
+### Siatka analizy
+
+```
+3 konfiguracje × 3 warianty awarii = 9 kombinacji do oceny
+ale tylko 3 PRZEBIEGI w HOMER (po jednym na wariant awarii),
+ponieważ jeden przebieg zwraca wszystkie konfiguracje w tabeli wyników
+```
+
+> **Uwaga redakcyjna:** w tekście pracy dyplomowej (język polski) słowo „scenariusz"
+> zarezerwowane jest dla **konfiguracji** — zgodnie ze szkieletem pracy i rozdziałami
+> 1–3, które już powstały. Zdarzenia awaryjne opisywane są wyłącznie jako
+> **„warianty awarii"**. Terminologii tej nie wolno zmieniać.
+
+---
+
 ## 1. Zasada podstawowa — jeden przebieg zawiera wszystkie konfiguracje
 
 HOMER Pro **nie liczy jednej konfiguracji na raz**. W jednym przebiegu optymalizator
@@ -17,9 +57,9 @@ w której **każdy wiersz stanowi odrębną konfigurację**.
 | Wiersz w tabeli wyników | Scenariusz pracy |
 |---|---|
 | sama sieć | **punkt odniesienia** (nie jest scenariuszem) |
-| sieć + agregat | **Scenariusz 1 — Baza** |
-| sieć + agregat + PV + BESS | **Scenariusz 2 — Hybryda** |
-| sieć + PV + BESS + CHP | **Scenariusz 3 — Zaawansowana mikrosieć** |
+| sieć + agregat | **K1 — Scenariusz 1 (Baza)** |
+| sieć + agregat + PV + BESS | **K2 — Scenariusz 2 (Hybryda)** |
+| sieć + PV + BESS + CHP | **K3 — Scenariusz 3 (Mikrosieć)** |
 | pozostałe kombinacje | materiał uzupełniający |
 
 **Wniosek praktyczny:** liczba przebiegów odpowiada liczbie **wariantów awarii**,
