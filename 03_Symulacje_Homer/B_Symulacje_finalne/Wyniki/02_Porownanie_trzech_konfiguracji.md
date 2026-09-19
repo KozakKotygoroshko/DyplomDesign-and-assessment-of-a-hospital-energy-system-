@@ -22,7 +22,42 @@ co odpowiada 111% mocy szczytowej obiektu (56,72 kW).
 
 ---
 
-## 2. Wariant A1 — awaria black-sky, 72 godziny
+## 2. Wariant A0 — praca normalna (bez awarii)
+
+| Konfiguracja | NPC | LCOE | CAPEX | IRR | Zwrot | **Czas pracy źródła** |
+|---|---|---|---|---|---|---|
+| **PV 110 kW** (optimum) | **1,59 M$** | **0,190** | 107 350 $ | **16%** | **6,0 lat** | — |
+| K2 — PV 110 + agregat | 1,62 M$ | 0,195 | 138 850 $ | 12% | 7,7 | **0 h** |
+| PV 110 + BESS | 1,63 M$ | 0,202 | 133 588 $ | 12% | 7,5 | — |
+| **K2 — PV 110 + agregat + BESS** | **1,65 M$** | **0,207** | 165 088 $ | 9,2% | 9,3 | **0 h** |
+| odniesienie (sama sieć) | 1,71 M$ | 0,220 | 0 $ | — | — | — |
+| **K1 — agregat 63 kW** | **1,73 M$** | **0,225** | **31 500 $** | — | — | **0 h** |
+| **K3 — PV 110 + CHP 100 kW** | **2,02 M$** | **0,281** | 557 350 $ | — | — | **125 h** |
+| K3 — CHP bez PV | 2,13 M$ | 0,312 | 450 000 $ | — | — | 753 h |
+
+### Obserwacja zasadnicza
+
+**Agregat prądotwórczy pracuje zero godzin w roku.** Przy nieprzerwanej dostępności
+sieci nie zostaje uruchomiony ani razu, stanowiąc wyłącznie obciążenie kapitałowe:
+
+```
+K1 wobec odniesienia:  NPC +20 000 $  ·  LCOE +0,005 $/kWh  ·  0 kWh wyprodukowanych
+```
+
+Jest to ilościowe potwierdzenie tezy z podrozdziału 3.2 o pasywnym charakterze
+klasycznego zasilania rezerwowego.
+
+**Jednostka kogeneracyjna** pracuje 125 godzin (przy współpracy z PV) lub 753 godziny
+(bez PV) — w obu przypadkach znikomo wobec 8 760 godzin roku. Przyczyną jest
+przewymiarowanie 2,5-krotne względem obciążenia obiektu.
+
+**Konfiguracją optymalną w warunkach normalnych** jest układ z samą instalacją PV
+o mocy 110 kWp: LCOE 0,190 $/kWh (−13,6% wobec odniesienia), okres zwrotu 6,0 lat,
+IRR 16%. Układ ten nie zapewnia jednak żadnej autonomii w razie awarii.
+
+---
+
+## 3. Wariant A1 — awaria black-sky, 72 godziny
 
 Zapotrzebowanie obiektu w czasie awarii: **3 111 kWh**.
 
@@ -51,7 +86,7 @@ Stosunek nakładów: 1 : 15,8
 
 ---
 
-## 3. Wariant A2 — seria pięciu przerw (łącznie 21 h)
+## 4. Wariant A2 — seria pięciu przerw (łącznie 21 h)
 
 Zapotrzebowanie: **895 kWh**.
 
@@ -69,9 +104,9 @@ uruchomień agregatu.
 
 ---
 
-## 4. Wnioski — rewizja wcześniejszych ustaleń
+## 5. Wnioski — rewizja wcześniejszych ustaleń
 
-### 4.1. Pod względem ekonomicznym agregat prądotwórczy wygrywa jednoznacznie
+### 5.1. Pod względem ekonomicznym agregat prądotwórczy wygrywa jednoznacznie
 
 Wprowadzenie agregatu do modelu **zmienia wnioski sformułowane wcześniej**.
 Przy nakładach 31 500 $ zapewnia on pełne pokrycie obu badanych typów awarii —
@@ -88,7 +123,7 @@ ekonomicznego jako źródło zasilania awaryjnego.** Jest to wniosek przeciwny d
 uzyskanego w symulacjach testowych, gdzie obiekt o zapotrzebowaniu 1 GWh/rok
 pozwalał jednostce CHP pracować 7 112 godzin rocznie i generować oszczędności.
 
-### 4.2. Rozstrzygające pozostaje kryterium logistyczne, nie ekonomiczne
+### 5.2. Rozstrzygające pozostaje kryterium logistyczne, nie ekonomiczne
 
 Pokrycie awarii 72-godzinnej wymaga **944 litrów oleju napędowego**.
 
@@ -108,7 +143,7 @@ Kogeneracja gazowa nie podlega temu ograniczeniu: paliwo dostarczane jest sieci�
 podziemną, niezależną od transportu drogowego, a czas pracy ograniczony jest wyłącznie
 ciągłością dostaw gazu.
 
-### 4.3. Właściwe sformułowanie wniosku dla pracy
+### 5.3. Właściwe sformułowanie wniosku dla pracy
 
 Zestawienie wyników prowadzi do wniosku o charakterze warunkowym:
 
@@ -123,7 +158,7 @@ Wniosek ten jest **mocniejszy** od pierwotnego, ponieważ nie pomija najtańszej
 alternatywy, lecz wskazuje warunki, w których droższe rozwiązanie znajduje
 uzasadnienie.
 
-### 4.4. Rola magazynu bateryjnego — potwierdzona
+### 5.4. Rola magazynu bateryjnego — potwierdzona
 
 W wariancie A2 konfiguracja z BESS zużywa **202 litry zamiast 272** (−26%).
 Magazyn przejmuje krótkie przerwy, ograniczając liczbę uruchomień agregatu.
@@ -132,7 +167,7 @@ ograniczający pracę niskoobciążeniową źródła sterowalnego.
 
 ---
 
-## 5. Zestawienie zbiorcze
+## 6. Zestawienie zbiorcze
 
 | Wskaźnik | odniesienie | K1 Baza | K2 Hybryda | K3 Mikrosieć |
 |---|---|---|---|---|
@@ -144,27 +179,30 @@ ograniczający pracę niskoobciążeniową źródła sterowalnego.
 | Paliwo (A1) | — | 944 l ON | 879 l ON | 1 060 m³ gazu |
 | Paliwo (A2) | — | 272 l ON | **202 l ON** | 310 m³ gazu |
 | Zależność od transportu | — | **wysoka** | **wysoka** | **brak** |
-| Praca poza awarią | — | 0 h/rok | 0 h/rok | 0 h/rok¹ |
+| **Praca w warunkach normalnych (A0)** | — | **0 h/rok** | **0 h/rok** | **125 h/rok**¹ |
 | Udział OZE | 0% | 0% | 4,0% | 4,0% |
 
-¹ Przy skali 355 MWh/rok jednostka CHP nie pracuje poza okresami awarii — jest
-przewymiarowana 2,5-krotnie względem obciążenia obiektu.
+¹ Wartość dla konfiguracji z PV. Bez PV jednostka pracuje 753 h/rok. W obu przypadkach
+znikomo wobec 8 760 godzin roku — przyczyną jest przewymiarowanie 2,5-krotne.
 
 ---
 
-## 6. Pliki modeli
+## 7. Pliki modeli
 
 | Plik | Wariant | Zawiera agregat |
 |---|---|---|
-| `FINAL_Pyrzyce_A0_bez_awarii.homer` | A0 | ⬜ do uzupełnienia |
+| `FINAL_Pyrzyce_A0_bez_awarii.homer` | A0 | ✅ tak |
 | `FINAL_Pyrzyce_A1_blacksky_72h.homer` | A1 | ✅ tak |
 | `FINAL_Pyrzyce_A2_serie_krotkich.homer` | A2 | ✅ tak |
 
 ---
 
-## 7. Zadanie otwarte
+## 8. Zadania otwarte
 
-Wariant **A0 (praca normalna)** wymaga ponownego przeliczenia z agregatem —
-pozwoli to wykazać, że w warunkach normalnej pracy agregat pozostaje bezczynny
-(0 godzin), stanowiąc wyłącznie obciążenie kapitałowe. Jest to argument
-uzupełniający wobec kryterium logistycznego.
+| Zadanie | Uzasadnienie |
+|---|---|
+| Pozyskanie danych jednostki CHP 30–40 kW od producenta | Katalog HOMER nie zawiera jednostek gazowych poniżej 100 kW |
+| Ustalenie rzeczywistej pojemności zbiornika agregatu | Wartość rozstrzygająca dla oceny konfiguracji K1 |
+| Weryfikacja zapotrzebowania cieplnego | 700 MWh jest oszacowaniem — wniosek o audyt złożony |
+| Wygenerowanie raportów HOMER w formacie DOCX | Licencja Evaluation wygasa 26.09.2026 |
+| Analiza rozmieszczenia modułów w PV\*SOL | Potwierdzenie granicy 110 kWp |
