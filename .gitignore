@@ -36,3 +36,9 @@ node_modules/
 
 # Pliki robocze Worda
 ~$*.docx
+
+# Instrukcje robocze i pliki pomocnicze — nie naleza do pracy
+JAK_WGRAC_NA_GITHUB.md
+Untitled.canvas
+*.canvas
+_repo/
