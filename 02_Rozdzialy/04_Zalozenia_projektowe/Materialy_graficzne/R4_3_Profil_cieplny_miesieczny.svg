@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440" font-family="Georgia, 'Times New Roman', serif">
+<rect width="720" height="440" fill="#ffffff"/>
+
+<text x="360" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">Sezonowość zapotrzebowania na ciepło</text>
+<text x="360" y="42" text-anchor="middle" font-size="12" fill="#555">Średnia moc cieplna w ujęciu miesięcznym · suma roczna 810,8 MWh</text>
+
+<!-- gridlines -->
+<g stroke="#d8d8d8" stroke-width="1">
+<line x1="90" y1="340" x2="680" y2="340"/>
+<line x1="90" y1="259.4" x2="680" y2="259.4"/>
+<line x1="90" y1="178.9" x2="680" y2="178.9"/>
+<line x1="90" y1="98.3" x2="680" y2="98.3"/>
+</g>
+<g font-size="11" fill="#555" text-anchor="end">
+<text x="82" y="344">0</text>
+<text x="82" y="263">50</text>
+<text x="82" y="183">100</text>
+<text x="82" y="102">150</text>
+</g>
+<text x="30" y="200" font-size="12" fill="#333" transform="rotate(-90 30 200)" text-anchor="middle">Moc cieplna średnia [kW]</text>
+
+<line x1="90" y1="340" x2="680" y2="340" stroke="#444" stroke-width="1.5"/>
+<line x1="90" y1="55" x2="90" y2="340" stroke="#444" stroke-width="1.5"/>
+
+<!-- bars -->
+<g fill="#b5452f">
+<rect x="96.5" y="69.2" width="36" height="270.8"/>
+<rect x="145.7" y="79.6" width="36" height="260.4"/>
+<rect x="194.8" y="126.0" width="36" height="214.0"/>
+<rect x="244.0" y="193.4" width="36" height="146.6"/>
+<rect x="293.2" y="264.0" width="36" height="76.0"/>
+</g>
+<g fill="#d9a441">
+<rect x="342.3" y="286.4" width="36" height="53.6"/>
+<rect x="391.5" y="286.4" width="36" height="53.6"/>
+<rect x="440.7" y="286.4" width="36" height="53.6"/>
+</g>
+<g fill="#b5452f">
+<rect x="489.8" y="272.8" width="36" height="67.2"/>
+<rect x="539.0" y="202.4" width="36" height="137.6"/>
+<rect x="588.2" y="132.0" width="36" height="208.0"/>
+<rect x="637.3" y="85.6" width="36" height="254.4"/>
+</g>
+
+<!-- summer base line -->
+<line x1="90" y1="286.4" x2="690" y2="286.4" stroke="#8a6d1f" stroke-width="2" stroke-dasharray="6,3"/>
+<line x1="409.5" y1="248" x2="409.5" y2="284" stroke="#8a6d1f" stroke-width="1"/>
+<rect x="282" y="218" width="256" height="32" fill="#ffffff" fill-opacity="0.92" stroke="#d9c89a" stroke-width="1"/>
+<text x="410" y="232" text-anchor="middle" font-size="11.5" fill="#8a6d1f" font-weight="bold">baza letnia ok. 33 kW</text>
+<text x="410" y="245" text-anchor="middle" font-size="10.5" fill="#8a6d1f">c.w.u. + procesy technologiczne</text>
+
+<!-- values -->
+<g font-size="9.5" fill="#444" text-anchor="middle">
+<text x="114.5" y="63">168</text>
+<text x="163.7" y="73">162</text>
+<text x="212.8" y="120">133</text>
+<text x="262.0" y="187">91</text>
+<text x="311.2" y="258">47</text>
+<text x="360.3" y="280">33</text>
+<text x="409.5" y="280">33</text>
+<text x="458.7" y="280">33</text>
+<text x="507.8" y="267">42</text>
+<text x="557.0" y="196">85</text>
+<text x="606.2" y="126">129</text>
+<text x="655.3" y="79">158</text>
+</g>
+
+<!-- months -->
+<g font-size="11" fill="#333" text-anchor="middle">
+<text x="114.5" y="357">I</text>
+<text x="163.7" y="357">II</text>
+<text x="212.8" y="357">III</text>
+<text x="262.0" y="357">IV</text>
+<text x="311.2" y="357">V</text>
+<text x="360.3" y="357">VI</text>
+<text x="409.5" y="357">VII</text>
+<text x="458.7" y="357">VIII</text>
+<text x="507.8" y="357">IX</text>
+<text x="557.0" y="357">X</text>
+<text x="606.2" y="357">XI</text>
+<text x="655.3" y="357">XII</text>
+</g>
+
+<!-- annotation box -->
+<rect x="120" y="378" width="490" height="52" fill="#f4f1ea" stroke="#d6cfc0" stroke-width="1"/>
+<text x="365" y="396" text-anchor="middle" font-size="11.5" fill="#1a1a1a"><tspan font-weight="bold">Baza letnia wyznacza górną granicę mocy cieplnej jednostki kogeneracyjnej</tspan></text>
+<text x="365" y="412" text-anchor="middle" font-size="11" fill="#444">pracującej całorocznie bez konieczności odprowadzania nadwyżek ciepła.</text>
+<text x="365" y="426" text-anchor="middle" font-size="10.5" fill="#666" font-style="italic">Stosunek styczeń / lipiec = 5,0 : 1</text>
+</svg>

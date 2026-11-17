@@ -1,5 +1,13 @@
 # Kwerenda ogólnopolska — poszukiwanie obiektu z pełną dokumentacją energetyczną
 
+> ⚠️ **DOKUMENT ARCHIWALNY — nie stanowi źródła danych dla tekstu pracy.**
+> Powstał przed otrzymaniem odpowiedzi szpitala (21.09.2026) i zawiera wartości
+> szacunkowe, obecnie **nieaktualne** (m.in. 355 MWh, 700 MWh, zbiornik 1 000 l).
+> Wartości obowiązujące: [[06_Tabela_liczb_wzorcowych]].
+> Dokument zachowano jako zapis przebiegu prac.
+
+---
+
 Rozszerzenie poszukiwań poza województwo zachodniopomorskie, w celu znalezienia obiektu,
 dla którego dostępny jest **komplet danych** niezbędnych do symulacji: zużycie energii
 elektrycznej, zapotrzebowanie na ciepło oraz charakterystyka budynku.
@@ -42,7 +50,7 @@ wykonalności oraz dokumentację powykonawczą. Dokumenty te podlegają udostęp
 | Obiekt | Zakres projektu | Wartość dla pracy |
 |---|---|---|
 | **Szpital Specjalistyczny nr 2 w Bytomiu** | 2 instalacje PV po **49,6 kWp** na 3 dachach + **magazyn energii** + pompa ciepła z buforem c.w.u. | Konfiguracja niemal identyczna z badaną (PV + BESS); dostępna dokumentacja projektowa |
-| **Szpital Specjalistyczny im. Świętej Rodziny w Warszawie** | Układ **kogeneracji** + energia słoneczna i geotermalna | Jedyny zidentyfikowany obiekt z wdrożonym CHP — materiał porównawczy dla Scenariusza 3 |
+| **Szpital Specjalistyczny im. Świętej Rodziny w Warszawie** | Układ **kogeneracji** + energia słoneczna i geotermalna | Jedyny zidentyfikowany obiekt z wdrożonym CHP — materiał porównawczy dla Konfiguracji K3 |
 | Szpital Reumatologiczny w Ustroniu | Audyt kotłowni z rekomendacją kogeneracji i/lub PV | Przykład analizy wariantowej źródeł |
 | Miejski Szpital Zespolony w Częstochowie | Audyt energetyczny budynków | Dane o zapotrzebowaniu na ciepło wentylacyjne |
 

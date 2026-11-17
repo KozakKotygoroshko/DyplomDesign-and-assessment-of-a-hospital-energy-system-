@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" font-family="Georgia, 'Times New Roman', serif">
+<rect width="720" height="420" fill="#ffffff"/>
+
+<text x="360" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">Układy rozmieszczenia modułów na dachu płaskim</text>
+<text x="360" y="43" text-anchor="middle" font-size="12" fill="#555">Wpływ układu na moc możliwą do zainstalowania · dach 2 384 m²</text>
+
+<!-- LEFT: south -->
+<text x="185" y="72" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c5f8d">Układ południowy rzędowy</text>
+<text x="185" y="88" text-anchor="middle" font-size="11" fill="#666">orientacja S · pochylenie 20–25°</text>
+<rect x="55" y="100" width="260" height="170" fill="#f7f7f5" stroke="#bbb" stroke-width="1.5"/>
+
+<!-- south rows: tilted panels with wide gaps -->
+<g>
+<g transform="translate(70,118)"><path d="M 0,22 L 46,4 L 46,12 L 0,30 Z" fill="#2c5f8d"/><line x1="0" y1="30" x2="0" y2="34" stroke="#888" stroke-width="1.5"/><line x1="46" y1="12" x2="46" y2="34" stroke="#888" stroke-width="1.5"/></g>
+<g transform="translate(130,118)"><path d="M 0,22 L 46,4 L 46,12 L 0,30 Z" fill="#2c5f8d"/><line x1="0" y1="30" x2="0" y2="34" stroke="#888" stroke-width="1.5"/><line x1="46" y1="12" x2="46" y2="34" stroke="#888" stroke-width="1.5"/></g>
+<g transform="translate(190,118)"><path d="M 0,22 L 46,4 L 46,12 L 0,30 Z" fill="#2c5f8d"/><line x1="0" y1="30" x2="0" y2="34" stroke="#888" stroke-width="1.5"/><line x1="46" y1="12" x2="46" y2="34" stroke="#888" stroke-width="1.5"/></g>
+<g transform="translate(250,118)"><path d="M 0,22 L 46,4 L 46,12 L 0,30 Z" fill="#2c5f8d"/><line x1="0" y1="30" x2="0" y2="34" stroke="#888" stroke-width="1.5"/><line x1="46" y1="12" x2="46" y2="34" stroke="#888" stroke-width="1.5"/></g>
+
+<g transform="translate(70,188)"><path d="M 0,22 L 46,4 L 46,12 L 0,30 Z" fill="#2c5f8d"/><line x1="0" y1="30" x2="0" y2="34" stroke="#888" stroke-width="1.5"/><line x1="46" y1="12" x2="46" y2="34" stroke="#888" stroke-width="1.5"/></g>
+<g transform="translate(130,188)"><path d="M 0,22 L 46,4 L 46,12 L 0,30 Z" fill="#2c5f8d"/><line x1="0" y1="30" x2="0" y2="34" stroke="#888" stroke-width="1.5"/><line x1="46" y1="12" x2="46" y2="34" stroke="#888" stroke-width="1.5"/></g>
+<g transform="translate(190,188)"><path d="M 0,22 L 46,4 L 46,12 L 0,30 Z" fill="#2c5f8d"/><line x1="0" y1="30" x2="0" y2="34" stroke="#888" stroke-width="1.5"/><line x1="46" y1="12" x2="46" y2="34" stroke="#888" stroke-width="1.5"/></g>
+<g transform="translate(250,188)"><path d="M 0,22 L 46,4 L 46,12 L 0,30 Z" fill="#2c5f8d"/><line x1="0" y1="30" x2="0" y2="34" stroke="#888" stroke-width="1.5"/><line x1="46" y1="12" x2="46" y2="34" stroke="#888" stroke-width="1.5"/></g>
+</g>
+
+<!-- gap arrow -->
+<line x1="78" y1="160" x2="78" y2="206" stroke="#8a6d1f" stroke-width="1.2"/>
+<path d="M 78,160 l -3,5 l 6,0 Z M 78,206 l -3,-5 l 6,0 Z" fill="#8a6d1f"/>
+<text x="86" y="186" font-size="10" fill="#8a6d1f" font-style="italic">szeroki odstęp</text>
+
+<rect x="55" y="282" width="260" height="62" fill="#eef3f8" stroke="#c3d4e2" stroke-width="1"/>
+<text x="185" y="300" text-anchor="middle" font-size="11.5" fill="#1a1a1a">GCR <tspan font-weight="bold">0,25–0,30</tspan></text>
+<text x="185" y="318" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c5f8d">ok. 100–120 kWp</text>
+<text x="185" y="336" text-anchor="middle" font-size="10.5" fill="#555" font-style="italic">wyższy uzysk jednostkowy [kWh/kWp]</text>
+
+<!-- RIGHT: east-west -->
+<text x="535" y="72" text-anchor="middle" font-size="14" font-weight="bold" fill="#4a7a4a">Układ wschód–zachód</text>
+<text x="535" y="88" text-anchor="middle" font-size="11" fill="#666">orientacja E–W · pochylenie 10–15°</text>
+<rect x="405" y="100" width="260" height="170" fill="#f7f7f5" stroke="#bbb" stroke-width="1.5"/>
+
+<!-- EW rows: back-to-back, dense -->
+<g>
+<g transform="translate(415,112)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(465,112)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(515,112)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(565,112)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(615,112)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+
+<g transform="translate(415,150)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(465,150)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(515,150)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(565,150)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(615,150)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+
+<g transform="translate(415,188)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(465,188)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(515,188)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(565,188)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(615,188)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+
+<g transform="translate(415,226)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(465,226)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(515,226)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(565,226)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+<g transform="translate(615,226)"><path d="M 0,16 L 22,4 L 22,10 L 0,22 Z" fill="#4a7a4a"/><path d="M 24,4 L 46,16 L 46,22 L 24,10 Z" fill="#6b9a6b"/></g>
+</g>
+
+<rect x="405" y="282" width="260" height="62" fill="#eef5ee" stroke="#c3dcc3" stroke-width="1"/>
+<text x="535" y="300" text-anchor="middle" font-size="11.5" fill="#1a1a1a">GCR <tspan font-weight="bold">0,60–0,70</tspan></text>
+<text x="535" y="318" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a7a4a">ok. 240–280 kWp</text>
+<text x="535" y="336" text-anchor="middle" font-size="10.5" fill="#555" font-style="italic">uzysk jednostkowy niższy o 10–15%</text>
+
+<!-- bottom note -->
+<rect x="80" y="362" width="560" height="48" fill="#f4f1ea" stroke="#d6cfc0" stroke-width="1"/>
+<text x="360" y="380" text-anchor="middle" font-size="11.5" fill="#1a1a1a">Do symulacji przyjęto wartość zachowawczą <tspan font-weight="bold">124 kWp</tspan> (układ południowy).</text>
+<text x="360" y="398" text-anchor="middle" font-size="11" fill="#444">Optymalizator osiągnął górną granicę zbioru przy każdej jej wartości — <tspan font-style="italic">ograniczeniem jest układ rozmieszczenia, nie ekonomia.</tspan></text>
+</svg>

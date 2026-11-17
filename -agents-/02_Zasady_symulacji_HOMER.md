@@ -91,7 +91,7 @@ odpowiadające mu wiersze w tabeli wyników **nie zostaną wygenerowane**.
 > **Błąd popełniony 19.09.2026:** w modelu finalnym pominięto agregat prądotwórczy.
 > W konsekwencji Scenariusze 1 i 2 nie zostały obliczone, a porównanie sprowadzało się
 > do zestawienia z układem pozbawionym jakiegokolwiek źródła rezerwowego — wariantem
-> nieistniejącym w praktyce i niedopuszczalnym prawnie (§ 30 Rozp. MZ).
+> nieistniejącym w praktyce i niedopuszczalnym prawnie (§ 42 Rozp. MZ).
 
 ---
 
@@ -174,3 +174,21 @@ bezpośrednio od producenta i wprowadzić je jako komponent własny.
 Jednostki wysokoprężne (`Autosize Genset` na oleju napędowym) **nigdy nie zostają
 wybrane przez optymalizator jako źródło kogeneracyjne** — koszt paliwa przewyższa
 cenę zakupu energii z sieci połączoną z produkcją ciepła w kotle gazowym.
+
+---
+
+## 8. Powiązane
+
+**Dane wejściowe do modeli:**
+
+- [[04_Odpowiedz_szpitala_dane_rzeczywiste]] — zużycie energii, geometria obiektu
+- [[05_Agregat_GRUPEL_dane_z_tabliczki]] — parametry agregatu istniejącego
+- [[04_Zalozenia_projektowe_TEKST]] — profile obciążenia, graniczna moc PV
+
+**Wyniki uzyskane wg tych zasad:**
+
+- [[04_Wyniki_V2_dane_rzeczywiste]] — seria właściwa V2
+- [[01_Wyniki_symulacji_finalnych]] — seria I (nieaktualna)
+- [[00_SYMULACJE_TESTOWE_raport_zbiorczy]] — seria weryfikacyjna
+
+**Pomocnicze:** [[00_PRZEWODNIK_po_folderze]] · [[Instrukcja_HOMER_Pro]] · [[00_STAN_PRAC]]

@@ -1,5 +1,13 @@
 # Szpital Powiatowy w Pyrzycach — karta obiektu
 
+> ⚠️ **DOKUMENT ARCHIWALNY — nie stanowi źródła danych dla tekstu pracy.**
+> Powstał przed otrzymaniem odpowiedzi szpitala (21.09.2026) i zawiera wartości
+> szacunkowe, obecnie **nieaktualne** (m.in. 355 MWh, 700 MWh, zbiornik 1 000 l).
+> Wartości obowiązujące: [[06_Tabela_liczb_wzorcowych]].
+> Dokument zachowano jako zapis przebiegu prac.
+
+---
+
 Zestawienie danych zgromadzonych na potrzeby oceny przydatności obiektu jako
 referencyjnego dla pracy dyplomowej.
 

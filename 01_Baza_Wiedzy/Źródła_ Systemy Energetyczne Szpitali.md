@@ -12,7 +12,7 @@ Projektowanie architektury zasilania dla obiektów medycznych jest procesem ści
 
 Fundamentem prawnym warunkującym minimalny standard bezpieczeństwa energetycznego w polskim systemie ochrony zdrowia jest Rozporządzenie Ministra Zdrowia w sprawie 
 
-szczegółowych wymagań, jakim powinny odpowiadać pomieszczenia i urządzenia podmiotu wykonującego działalność leczniczą<sup>1</sup> . Dokument ten ustanawia kluczowe parametry brzegowe dla zasilania rezerwowego. Zgodnie z zapisami § 30 oraz § 41 tego aktu, szpital musi bezwzględnie posiadać rezerwowe źródło zaopatrzenia w energię elektryczną w postaci agregatu prądotwórczego wyposażonego w funkcję autostartu, który jest w stanie pokryć co najmniej 30% szczytowego zapotrzebowania na moc placówki, wspartego urządzeniami zapewniającymi bezprzerwowe podtrzymanie napięcia (UPS)<sup>1</sup> . 
+szczegółowych wymagań, jakim powinny odpowiadać pomieszczenia i urządzenia podmiotu wykonującego działalność leczniczą<sup>1</sup> . Dokument ten ustanawia kluczowe parametry brzegowe dla zasilania rezerwowego. Zgodnie z zapisami § 42 tego aktu, szpital musi bezwzględnie posiadać rezerwowe źródło zaopatrzenia w energię elektryczną w postaci agregatu prądotwórczego wyposażonego w funkcję autostartu, który jest w stanie pokryć co najmniej 30% szczytowego zapotrzebowania na moc placówki, wspartego urządzeniami zapewniającymi bezprzerwowe podtrzymanie napięcia (UPS)<sup>1</sup> . 
 
 W praktyce inżynierskiej próg 30% mocy szczytowej stanowi jedynie legislacyjne minimum, które zazwyczaj wystarcza wyłącznie na pokrycie obciążeń usług bezpieczeństwa. Do takich krytycznych odbiorów należą bloki operacyjne, oddziały intensywnej terapii (OIT/OIOM), izolatki z wentylacją nadciśnieniową, strefy podtrzymania życia noworodków, systemy oświetlenia ewakuacyjnego oraz chłodnie do przechowywania krwi i szczepionek<sup>4</sup> . Znaczące ograniczenie tego przepisu polega na jego niedostosowaniu do współczesnej, energochłonnej infrastruktury obrazowej (np. Rezonans Magnetyczny, Tomografia Komputerowa), która generuje asymetryczne piki obciążeń (tzw. _inrush currents_ ), zdolne do destabilizacji sieci zasilanej wyłącznie z tradycyjnego agregatu. Z tego względu nowoczesne projekty architektur energetycznych traktują to rozporządzenie jako punkt wyjścia, integrując mikrosieci zdolne do przejęcia znacznej większości lub wręcz całości obciążeń obiektu poprzez wyspową współpracę jednostek CHP i magazynów energii. Taka topologia nie tylko realizuje wymogi prawne, ale przekształca zasilanie z pasywnego centrum kosztowego w aktywny węzeł efektywności energetycznej. 
 
@@ -165,7 +165,7 @@ nadrzędne wartości z modelu BIA – czyli MTPD (maksymalne przestoje), RTO ora
 
 #### **Джерела** 
 
-1. § 30. - Szczegółowe wymagania, jakim powinny odpowiadać pomieszczenia i urządzenia podmiotu leczniczego dla osób pozbawionych... - Dz.U.2024.1441 t.j. - - - - - 
+1. § 42. - Szczegółowe wymagania, jakim powinny odpowiadać pomieszczenia i urządzenia podmiotu leczniczego dla osób pozbawionych... - Dz.U.2024.1441 t.j. - - - - - 
 
 OpenLEX, htps://sip.lex.pl/akty <u>prawne/dzu dziennik ustaw/szczegolowe</u> - - - - - - - 
 

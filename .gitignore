@@ -13,3 +13,26 @@ GitHub_upload/
 ~$*
 Untitled/
 node_modules/
+
+# ---------------------------------------------------------------------------
+# Dane osobowe osob trzecich - NIE publikowac
+# Pismo szpitala zawiera podpis i imienne oznaczenie pracownika,
+# tabliczka znamionowa - numer seryjny urzadzenia.
+# Tresc obu dokumentow jest przytoczona w plikach .md, same skany nie sa potrzebne.
+# ---------------------------------------------------------------------------
+02_Rozdzialy/04_Zalozenia_projektowe/Odpowiedz_szpitala_2026-09-21.pdf
+02_Rozdzialy/04_Zalozenia_projektowe/Tabliczka_znamionowa_agregat_GRUPEL.pdf
+
+# ---------------------------------------------------------------------------
+# Nieaktualne wersje dokumentu zbiorczego.
+# Wersje obowiazujace: PRACA_CALOSC_v5.docx oraz Dyplom_zvit_ukrainska_v2.docx
+# ---------------------------------------------------------------------------
+02_Rozdzialy/_Dokumenty_Word/PRACA_CALOSC_do_sprawdzenia.docx
+02_Rozdzialy/_Dokumenty_Word/PRACA_CALOSC_v2_po_korekcie.docx
+02_Rozdzialy/_Dokumenty_Word/PRACA_CALOSC_v3.docx
+02_Rozdzialy/_Dokumenty_Word/PRACA_CALOSC_v4.docx
+02_Rozdzialy/_Dokumenty_Word/Dyplom_zvit_ukrainska.docx
+02_Rozdzialy/_Dokumenty_Word/Praca_dyplomowa_rozdzialy_1-3.docx
+
+# Pliki robocze Worda
+~$*.docx

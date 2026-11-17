@@ -40,7 +40,7 @@ Plik: `Profil_elektryczny_PYRZYCE_355MWh.csv`
 
 ### Odbiory krytyczne
 
-Zgodnie z § 30 Rozporządzenia MZ agregat musi pokryć **minimum 30% mocy szczytowej**:
+Zgodnie z § 42 Rozporządzenia MZ agregat musi pokryć **minimum 30% mocy szczytowej**:
 
 **0,30 × 56,72 kW = 17,0 kW**
 
@@ -200,7 +200,7 @@ się w zakresie rozwiązań standardowych, dostępnych katalogowo.
 | Zapotrzebowanie na ciepło | Dobór mocy cieplnej CHP i kotła | Audyt energetyczny |
 | Źródło ciepła (kotłownia / sieć) | Struktura kosztów w Scenariuszu 3 | Audyt / przetarg na gaz |
 | **Pojemność zbiornika paliwa** | **Bezpośrednio wyznacza czas autonomii K1** | Dokumentacja techniczna |
-| Moc agregatu | Weryfikacja zgodności z § 30 | jw. |
+| Moc agregatu | Weryfikacja zgodności z § 42 | jw. |
 | Moc umowna | Analiza opłat za moc, *peak shaving* | Faktura / przetarg |
 | Aktualne zużycie (2024–2026) | Weryfikacja wartości 355 MWh po likwidacji oddziałów | Nowszy przetarg |
 
